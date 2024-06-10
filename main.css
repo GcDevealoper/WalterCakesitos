@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: 13px;
+}
+
+body{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+#Header{
+    width: 80%;
+    height: 400px;
+    background-color: #f9a0ea;
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+    align-self: center;
+}
+
+#ProfilePic{
+    position: relative;
+    bottom: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff
+}
+
+#ProfilePic img{
+    width: 120px;
+    object-fit: cover;
+    position: relative;
+    left: -16px;
+    bottom: 13px
+}
+
+#Content{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.Title{
+    color: #990078;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Text{
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+p, a{
+    color: #990078;
+    text-decoration: none;
+}
+
+a{font-weight: bold;}
+
+#Gallery{
+    margin-top: 50px;
+    padding-left: 5%;
+    width: calc(80% - 5%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 35px;
+    margin-bottom: 100px;
+}
+
+.item{
+    border: 1px solid #bbb;
+    position: relative;
+    width: 280px;
+    height: 352px;
+    background-color: #4b0d37cf;
+    overflow: hidden;
+    border-radius: 15px;margin: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    /*background-color: #4b0d37cf;*/
+    color: #990078;
+    height: 30px;
+    width: 60%;
+    font-weight: bold;
+    border-top: 2px solid #990078;
+    padding-top: 15px;
+}
+
+#FAQ {
+    width: 100vw;
+    height: 340px;
+    background-color: #4b0d37cf;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+#FAQ *{
+    color: pink;
+}
+
+.space1{
+    width: 100%;
+    height: 12%;
+    /* background-color: #444;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 14px;
+    color: pink;
+}
+
+.space1 a{
+    color: pink;
+}
+
+.space2{
+    width: 100%;height: 7%;/* background-color: #444; */transform: translateY(-5px);
+}
+
+.item img{
+    width: 100%;height: 81%;
+}
+
+#Paypal{
+    position: absolute;
+    width: 70px;
+    top:69%;
+    right: 10%;
+}
+
+#info {
+    width: 30%;
+    margin-top: 10px;
+}
+
+#info h2{
+    font-size: 17px;
+}
+
+#Samples {
+    width: 50%;
+    position: relative;
+}
+
+#samp1,#samp2,#samp3{
+    position: absolute;
+    width: 229px;
+    height: 227px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#samp1 {
+    rotate: -12deg;
+    z-index: 2;
+    top: 13px;
+    right: 311px;
+}
+
+#samp1 img, #samp2 img, #samp3 img{
+    width: 100%;
+    object-fit: contain;
+}
+
+#samp2 {
+    right: 148px;
+    rotate: 6deg;
+    z-index: 1;
+}
+
+#samp3{
+    right: -15px;
+    rotate: 14deg;
+    top: 12px;
+}
+
+#Socials i{
+    font-size: 18px;
+    margin: 3px;
+}
+
+@media (max-width: 1213px){
+    
+    #Gallery{
+        justify-content: center;
+    }
+    .item {
+        width: 250px;
+        height: 290px;
+    }
+
+    #samp1,#samp2,#samp3{
+        width: 150px;
+        height: 150px;
+    }
+
+    #samp2 {
+        right: 219px;
+        rotate: 5deg;
+        z-index: 1;
+    }
+
+    #samp3{
+        right: 107px;
+        rotate: 10deg;
+        top: 15px;
+    }
+
+}
+
+@media (max-width: 1025px) {
+    #FAQ {
+        width: 100vw;
+        height: auto;
+        background-color: #4b0d37cf;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 80px;
+    }
+    
+    #Samples {
+        display: none;
+        width: 50%;
+        height: 220px;
+        position: relative;
+        align-self: center;
+        margin-top: 63px;
+    }
+    
+    #info {
+        width: 58%;
+        margin-top: 10px;
+        /* margin-right: 172px; */
+        align-self: center;
+        margin-bottom: 50px;
+    }
+}
+ 
+
