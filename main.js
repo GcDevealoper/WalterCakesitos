@@ -2,6 +2,8 @@ Cakesitos = [
     './OcCute.png',
     './JasdrikOC.png',
     './Satiro.png',
+    './KirbyCakesito.png',
+    './KirbyCakesitoSleep.png',
     './Anya1.png',
     './Anya2.png',
     './Aubrey.png',
